@@ -1,0 +1,163 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    float: left;
+    margin: 0;
+    padding: 0 20px;
+    font-size: 1.5em;
+}
+
+nav {
+    float: right;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+#hero {
+    height: 100vh;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+#hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#hero .container {
+    position: relative;
+    z-index: 1;
+    padding-top: 80px; /* Отступ сверху для фиксации header */
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+#about {
+    background-color: #fff;
+}
+
+#projects {
+    background-color: #f4f4f9;
+}
+
+.project {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+#contact {
+    background-color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .social-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+footer .social-links li a:hover {
+    color: #f39c12;
+}
